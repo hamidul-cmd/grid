@@ -1,12 +1,81 @@
-.col {
-    padding-inline: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+:root {
+  --boxcolor: #f7f6f3;
+  --bodycolor: #eeebe5;
+  --textcolor1: #4c4c4c;
+  --textcolor2: #333333;
 }
-h1 {
-    text-align: center;
+
+body {
+  background-color: var(--bodycolor);
+}
+
+section {
+  max-width: 1920px;
+  margin: auto;
+  margin-top: 60px;
+  overflow-x: hidden;
+}
+
+.skills__box {
+  padding: 40px;
+  background-color: var(--boxcolor);
+  border-radius: 12px;
+}
+
+.skills__logo {
+  height: 54px;
+  width: 54px;
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.skills__logo img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.skills__text {
+  text-align: center;
+}
+
+.skills__text h4 {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 600;
+  color: var(--textcolor1);
+  margin-bottom: 6px;
+}
+
+.skills__text p {
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--textcolor2);
+  margin-bottom: 0;
+}
+
+@media (min-width: 780px) {
+  section {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  section {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1920px) {
+  section {
+    margin-top: 150px;
+  }
 }
